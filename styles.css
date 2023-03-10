@@ -22,7 +22,7 @@ body {
   min-width: 400px;
 }
 
-h1 {
+.header {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
@@ -37,7 +37,7 @@ h1 {
   min-width: 400px;
 }
 
-main {
+.main_part {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -68,7 +68,7 @@ main {
 }
 
 @media screen and (max-width: 600px) {
-  main {
+  .main_part {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
