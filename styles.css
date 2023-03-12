@@ -37,7 +37,7 @@ body {
   min-width: 400px;
 }
 
-.main_part {
+.block {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -45,11 +45,11 @@ body {
   gap: 28px;
 }
 
-.blocks {
+.block___item_color {
   background: #ffffff;
 }
 
-.block_header {
+.block__item-header {
   font-family: "Open Sans";
   font-weight: 700;
   font-size: 17px;
@@ -59,7 +59,7 @@ body {
   margin: 22px;
 }
 
-.block_text {
+.block__item-text {
   font-weight: 400;
   font-size: 17px;
   line-height: 26px;
@@ -68,7 +68,7 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .main_part {
+  .block_v1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
