@@ -72,85 +72,95 @@ body {
   }
 }
 
-.block2 {
+.block-amway {
   display: flex;
   justify-content: space-around;
   height: 402px;
 }
 
-.leftblock {
+.earnings {
   display: flex;
   flex-direction: column;
   max-width: 470px;
   justify-content: center;
 }
 
-.leftblock__header {
+.earnings__header {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 36px;
-  color: #56565a;
   margin-bottom: 0px;
 }
 
-.leftblock__header-text {
+.earnings__header-text_font-family_source-sans-pro,
+.earnings__buttons-item_font-family_source-sans-pro,
+.cards-amway__item-header_font-family_source-sans-pro,
+.cards-amway__item3-header_font-family_source-sans-pro,
+.cards-amway__item-text_font-family_source-sans-pro,
+.cards-amway__item3-text_font-family_source-sans-pro {
   font-family: "Source Sans Pro", sans-serif;
+}
+
+.earnings__header-text_size_s,
+.earnings__buttons-item_size_s {
   font-size: 16px;
+}
+
+.earnings__header-text_color_gray,
+.earnings__header_color_gray,
+.cards-amway__item-header_color_gray,
+.cards-amway__item3-header_color_gray,
+.cards-amway__item-text_color_gray,
+.cards-amway__item3-text_color_gray {
   color: #56565a;
 }
 
-.leftblock__buttons {
+.earnings__buttons {
   display: flex;
   justify-content: flex-start;
   gap: 15px;
 }
 
-.leftblock__buttons-item {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 16px;
+.earnings__buttons-item {
   background: #0a467e;
   color: #ffffff;
   padding: 12px 40px;
   border: none;
 }
 
-.cards2 {
+.cards-amway {
   display: grid;
   grid-template-columns: repeat(2, minmax(220px, 270px));
   grid-template-rows: repeat(2, 1fr);
   gap: 15px;
 }
 
-.cards2__item,
-.cards2__item3 {
+.cards-amway__item,
+.cards-amway__item3 {
   border: 1px solid #ededed;
   border-radius: 5px;
   background: #f7f7f7;
   text-align: center;
 }
 
-.cards2__item3 {
+.cards-amway__item3 {
   grid-area: 1 / 2 / 3 / 3;
 }
 
-.cards2__item-header,
-.cards2__item3-header {
-  font-family: "Source Sans Pro";
+.cards-amway__item-header,
+.cards-amway__item3-header {
   font-size: 18px;
-  color: #56565a;
   margin-left: 45.5px;
   margin-right: 45.5px;
 }
 
-.cards2__item3-header {
+.cards-amway__item3-header {
   margin-left: 22px;
   margin-right: 22px;
 }
 
-.cards2__item-text,
-.cards2__item3-text {
-  font-family: "Source Sans Pro";
+.cards-amway__item-text,
+.cards-amway__item3-text {
   font-size: 14px;
-  color: #56565a;
   margin: 15px 25px 22px 25px;
 }
 
@@ -161,14 +171,14 @@ body {
   margin-right: 50px;
 }
 
-.cards2__item-icon {
+.cards-amway__item-icon {
   padding-top: 22px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.cards2__item3-icon {
+.cards-amway__item3-icon {
   padding-top: 106px;
   display: block;
   margin-left: auto;
@@ -176,22 +186,20 @@ body {
 }
 
 @media screen and (max-width: 880px) {
-  .cards2 {
+  .cards-amway {
     grid-template-columns: repeat(1, minmax(220px, 270px));
     grid-template-rows: repeat(3, 1fr);
   }
-  .cards2__item3 {
+  .cards-amway__item3 {
     grid-area: auto;
   }
 }
 
-@media screen and (max-width: 730px) {
-  .block2 {
-    flex-direction: column;
-    justify-content: space-between;
+@media screen and (max-width: 500px) {
+  .block-amway {
+    display: block;
   }
-  .cards2 {
-    grid-template-columns: repeat(1, minmax(220px, 270px));
-    grid-template-rows: repeat(3, 1fr);
+  .cards-amway {
+    margin-top: 20px;
   }
 }
